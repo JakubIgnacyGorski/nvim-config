@@ -30,9 +30,9 @@ return {
         -- },
         --
         -- # Example of using shfmt with extra args
-        -- shfmt = {
-        --   prepend_args = { "-i", "2", "-ci" },
-        -- },
+        shfmt = {
+          args = {},
+        },
       },
     }
     return opts
