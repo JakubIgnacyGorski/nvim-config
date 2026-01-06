@@ -92,11 +92,6 @@ return {
           enabled = diagnostics == "bacon-ls",
         },
         rust_analyzer = { enabled = false },
-        ["*"] = {
-          keys = {
-            { "<leader>W", "<cmd>noautocmd w<cr>", desc = "Save without formatting" },
-          },
-        },
       },
       yamlls = {
         -- Have to add this for yamlls to understand that we support line folding
