@@ -116,6 +116,20 @@ luasnip.add_snippets("tex", {
 })
 
 luasnip.add_snippets("tex", {
+  s("PrinterMargins", {
+    t({
+      "\\usepackage[",
+      "  a4paper,",
+      "  left=1.5cm,",
+      "  right=1.5cm,",
+      "  top=1.5cm,",
+      "  bottom=2.5cm",
+      "]{geometry}",
+    }),
+  }),
+})
+
+luasnip.add_snippets("tex", {
   s("bibend", {
     t({
       "",
