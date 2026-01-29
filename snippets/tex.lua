@@ -40,6 +40,7 @@ luasnip.add_snippets("tex", {
       "",
       "% --- Text formatting ---",
       "% \\usepackage{multicol}                   % Multiple columns.",
+      "% \\usepackage[normalem]{ulem}             % Break underline",
       "",
       "% --- Code ---",
       "% \\usepackage{minted}                     % Syntax-highlighted code.",
