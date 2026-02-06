@@ -88,10 +88,6 @@ return {
             },
           },
         },
-        bacon_ls = {
-          enabled = diagnostics == "bacon-ls",
-        },
-        rust_analyzer = { enabled = false },
       },
       yamlls = {
         -- Have to add this for yamlls to understand that we support line folding

@@ -11,5 +11,5 @@ return {
       opts.highlight.disable = { "latex" }
     end
   end,
-  opts = { ensure_installed = { "cpp", "cmake", "dockerfile", "json5", "ninja", "rst", "rust", "ron" } },
+  opts = { ensure_installed = { "cpp", "cmake", "dockerfile", "json5", "ninja", "rst" } },
 }
