@@ -4,5 +4,6 @@
 return {
   {
     "iamcco/markdown-preview.nvim",
+    latex = { enabled = false },
   },
 }
