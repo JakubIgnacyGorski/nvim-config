@@ -50,7 +50,6 @@ luasnip.add_snippets("tex", {
       "% ----------------- Hyperlink color setup ---------------------------",
       "\\usepackage{hyperref}",
       "\\hypersetup{",
-      "    pdfusetitle,",
       "    colorlinks=true,",
       "    linkcolor=blue,",
       "    urlcolor=blue,",
