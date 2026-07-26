@@ -38,6 +38,7 @@ return {
             "--completion-style=detailed",
             "--function-arg-placeholders",
             "--fallback-style=llvm",
+            "--query-driver=/home/jakub/zephyr-sdk-*/**/arm-zephyr-eabi-gcc,/usr/bin/arm-none-eabi-gcc",
           },
           init_options = {
             usePlaceholders = true,
