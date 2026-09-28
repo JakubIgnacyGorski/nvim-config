@@ -11,4 +11,4 @@ vim.opt.spell = true
 vim.opt.spelllang = { "pl", "en" }
 
 -- Remove modeline due to STM32CubeMX code problems
-vim.o.modeline = false
+vim.o.modeline = true
