@@ -17,5 +17,6 @@ ls.add_snippets("all", {
 
       return string.rep("-", math.max(suffix_len, 1))
     end, { 1 }),
+    t({ "", "", "" }),
   }),
 })
