@@ -4,7 +4,23 @@ return {
     ---@module "csvview"
     ---@type CsvView.Options
     opts = {
-      parser = { comments = { "#", "//" } },
+      parser = {
+        comments = { "#", "//" },
+        delimiter = {
+          ft = {
+            csv = ",", -- Always use comma for .csv files
+            tsv = "\t", -- Always use tab for .tsv files
+          },
+          fallbacks = { -- Try these delimiters in order for other files
+            ",", -- Comma (most common)
+            "\t", -- Tab
+            ";", -- Semicolon
+            "|", -- Pipe
+            ":", -- Colon
+            " ", -- Space
+          },
+        },
+      },
       keymaps = {
         -- Text objects for selecting fields
         textobject_field_inner = { "if", mode = { "o", "x" } },
@@ -18,10 +34,16 @@ return {
         jump_next_row = { "<Enter>", mode = { "n", "v" } },
         jump_prev_row = { "<S-Enter>", mode = { "n", "v" } },
       },
+
+      view = {
+        display_mode = "border",
+        header_lnum = true, -- Auto-detect header (default)
+        sticky_header = {
+          enabled = true,
+          separator = "─", -- Separator line character
+        },
+      },
     },
     cmd = { "CsvViewEnable", "CsvViewDisable", "CsvViewToggle" },
-    view = {
-      display_mode = "border",
-    },
   },
 }
