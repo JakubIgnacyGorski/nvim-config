@@ -9,7 +9,7 @@ return {
     -- tag = "v2.16",
     config = function()
       -- VimTeX configuration goes here, e.g.
-      vim.g.vimtex_view_general_viewer = "zathura"
+      vim.g.vimtex_view_method = "zathura"
       vim.g.vimtex_compiler_latexmk = {
         options = {
           "-verbose",
