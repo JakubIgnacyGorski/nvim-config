@@ -28,3 +28,19 @@ Snacks.toggle({
     vim.o.modeline = state
   end,
 }):map("<leader>uM")
+
+-- Toggle CSV View
+Snacks.toggle({
+  name = "CSV View",
+  get = function()
+    return vim.b.csvview_enabled or false
+  end,
+  set = function(state)
+    if state then
+      vim.cmd("CsvViewEnable")
+    else
+      vim.cmd("CsvViewDisable")
+    end
+    vim.b.csvview_enabled = state
+  end,
+}):map("<leader>uH")
