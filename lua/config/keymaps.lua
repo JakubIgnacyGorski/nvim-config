@@ -17,3 +17,14 @@ Snacks.toggle({
     vim.wo.wrap = true
   end,
 }):map("<leader>uW")
+
+-- Toggle modeline
+Snacks.toggle({
+  name = "Modeline",
+  get = function()
+    return vim.o.modeline
+  end,
+  set = function(state)
+    vim.o.modeline = state
+  end,
+}):map("<leader>uM")
